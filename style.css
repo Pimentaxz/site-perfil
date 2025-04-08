@@ -1,5 +1,5 @@
 h1{
-    color: cyan;
+    color: var(--titulo);
     font-size: 80px;
     text-align: center;
     font-family: 'Calibri';
@@ -28,7 +28,6 @@ p{
     font-family: 'Calibri';
 }
 #rodape{
-    background-color: black;
     position: absolute;
     right: 0;
     width: 100%;
@@ -57,8 +56,9 @@ section{
 
 }
 #section3{
-    background-color: #f0682e;
+    background-color: var(--corperfil);
     text-align: center;
+    border-radius: 10%;
 }
 #foto{
     text-align: center;
@@ -68,4 +68,38 @@ section{
 }
 #imagem:hover{
     cursor: pointer;
+}
+
+body{
+    background-color: var(--cordefundo);
+    color: var(--cortexto);
+}
+
+:root{
+    --cordefundo: #1c1a1a;
+    --cortexto: white;
+    --titulo: #bd1806;
+    --corperfil: #34baeb;
+    --corrodape: white;
+    --cortextorodape: black;
+}
+
+body.claro {
+    --cordefundo: #ffffff;
+    --cortexto: #000000;
+    --titulo: #bd1806;
+    --corperfil:rgb(184, 40, 176);
+    --corrodape: #eeeeee;
+    --cortextorodape: #000000;
+}
+
+#botaoTema {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--corperfil);
+    color: var(--cortexto);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
 }

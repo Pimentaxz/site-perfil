@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Aula 1</title>
+    <title>Site de Perfil</title>
 </head>
 <body>
     <header>
     <h1>Perfil</h1>
     <p>Sou um desenvolvedor web criativo.</p>
+    <button onclick="trocarTema()" id="botaoTema">Trocar tema</button>
     </header>
     <main>
         <section id = "section1">
@@ -20,9 +21,6 @@
             <p>15 anos</p>
             <h4>Local:</h4>
             <p>Atibaia, São Paulo, Brasil</p>
-            <img id = imagem src="imagens/facebook_black.png">
-            <img id = imagem src="imagens/twitter_black.png">
-            <img id = imagem src="imagens/instagram_black.png">
         </section>
         <section>
             <h3>Sobre mim</h3>
@@ -42,5 +40,12 @@
     <footer id = "rodape">
         <p id = "embaixo">Sample text. Click to select the text box. Click again our double click to start editing the text.<p>
     </footer>
+
+    <script>
+        function trocarTema() {
+            document.body.classList.toggle('claro');
+        }
+    </script>
+    
 </body>
 </html>
